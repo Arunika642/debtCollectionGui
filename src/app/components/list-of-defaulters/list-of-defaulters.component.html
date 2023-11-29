@@ -1,0 +1,52 @@
+<h2> LIST OF DEFAULTERS </h2>
+<div class="row">
+
+            <div class="form-group col-md-5">
+
+                <label for ="year">Year:</label>
+
+                <input type="text" class="form-control" id="year"
+
+                     [(ngModel)]="year" name="year">
+
+            </div>
+
+            <div class="form-group col-md-5">
+
+                 <label for="month">Month:</label>
+
+                <input type="text" class="form-control" id="month"
+
+                      [(ngModel)]="month" name="month">
+
+            </div>
+            <div class="form-group col-md-2 d-flex align-items-end"> 
+                <button class = "btn btn-success" (click)="getTrackList()" type ="submit">Submit</button> 
+            </div>
+
+        </div>
+<table class ="table table-striped">
+    <thead>
+        <tr>
+            <th> Payment Track Id </th>
+            <th> Loan App Id</th> 
+            <th> Month No</th>
+            <th> Status</th>
+            <th> Due Date Of Payment</th>
+            <th> Payment Receive Date</th> 
+            <!-- <th> Actions </th> -->
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor ="let details of track ">
+            <td>{{details.paymentTrackId}}</td>
+            <td>{{details.loanAppId }}</td>
+            <td>{{details.monthNo}}</td>
+            <td>{{details.status}}</td>
+            <td>{{details.dueDateOfPayment}}</td>
+            <td>{{details.paymentReceiveDate}}</td>
+            <!-- <button class ="btn btn-primary" (click)="updateStatus(details)">Update</button> -->
+            
+        </tr>
+    </tbody>
+</table>

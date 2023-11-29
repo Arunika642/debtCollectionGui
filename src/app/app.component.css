@@ -1,0 +1,30 @@
+.navbar-nav li:last-child {
+  margin-right: 40px; 
+}
+
+.title {
+  color: #337ab7; /* Set the text color */
+  font-size: 40px; /* Adjust the font size */
+  font-weight: bold; /* Make the text bold */
+  letter-spacing: 2px; /* Add letter spacing */
+  margin-top: 20px; /* Add top margin */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle text shadow */
+}
+
+.navbar-nav li a.nav-link {
+  padding: 10px 20px; 
+  background-color: #337ab7; 
+  color: #fff; 
+  border: none; 
+  border-radius: 5px; 
+}
+
+.navbar-nav li:not(:last-child) {
+  margin-right: 20px; 
+
+}
+.custom-navbar {
+  background-color: white; 
+}
+
+

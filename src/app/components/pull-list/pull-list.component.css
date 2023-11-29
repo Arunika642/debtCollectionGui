@@ -1,0 +1,40 @@
+  h2 {
+    color: black; 
+    font-size: 24px; 
+    font-weight: bold; 
+    letter-spacing: 2px; 
+    margin-bottom: 20px; 
+    text-align: center
+  }
+  
+  input.form-control {
+    border-radius: 5px; 
+    padding: 10px; 
+    border: 1px solid blue;
+}
+
+label {
+  font-weight: bold;
+}
+
+button.btn-success {
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+  
+  table.table {
+    margin-top: 20px; 
+  }
+  
+  table.table thead th {
+    background-color:lightblue; /* Set the background color of table header cells */
+    padding: 8px; /* Adjust the padding as desired */
+    text-align: left; /* Align the text to the left within table header cells */
+  }
+ 
+ 
+  
+  
+

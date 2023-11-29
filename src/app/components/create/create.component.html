@@ -1,0 +1,24 @@
+<div class="col-md-6 offset-md-3">
+<h3> CREATE TRACK</h3>
+<form (ngSubmit) = "onSubmit()">
+
+    <div class="form-group">
+        <label> Loan App Id</label>
+        <input type="text" class ="form-control" id = "loanAppId"
+        [(ngModel)]= "track.loanAppId" name = "loanAppId"/>
+    </div>
+
+    <div class="form-group">
+        <label> Month No</label>
+        <input type="text" class ="form-control" id = "monthNo"
+        [(ngModel)]= "track.monthNo" name = "monthNo"/>
+    </div>
+
+    <div class="form-group">
+        <label> Due Date Of Payment</label>
+        <input type="text" class ="form-control" id = "dueDateOfPayment"
+        [(ngModel)]= "track.dueDateOfPayment" name = "dueDateOfPayment"/>
+    </div>
+    <button class = "btn btn-success" type ="submit">Submit</button>
+</form>
+</div>
